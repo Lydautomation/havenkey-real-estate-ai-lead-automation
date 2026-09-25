@@ -55,6 +55,12 @@ Based on the recommended category, the workflow routes the lead to the appropria
 8. The prospect receives an automated confirmation email.
 9. The sales team reviews the lead and retains control over the final sales decision.
 
+## System Design
+
+The system design shows HavenKey's architecture, AI lead qualification process, HOT/WARM/COLD routing, sales team notification, property consultation scheduling, confirmation email, and human oversight.
+
+[**View HavenKey System Design**](docs/havenkey-system-design.pdf)
+
 ## Demo
 
 Watch HavenKey in action as it demonstrates the real estate lead journey from enquiry capture and AI qualification to lead routing, sales team notification, consultation scheduling, and confirmation email.
