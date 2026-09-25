@@ -55,6 +55,12 @@ Based on the recommended category, the workflow routes the lead to the appropria
 8. The prospect receives an automated confirmation email.
 9. The sales team reviews the lead and retains control over the final sales decision.
 
+## Demo
+
+Watch HavenKey in action as it demonstrates the real estate lead journey from enquiry capture and AI qualification to lead routing, sales team notification, consultation scheduling, and confirmation email.
+
+[**Watch HavenKey Demo**](https://www.loom.com/share/ac5c7a3970b34872bdcc74806b91bab9)
+
 ## Project Screenshots
 
 ### Main Workflow Overview
