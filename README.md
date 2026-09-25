@@ -1,98 +1,103 @@
 # HavenKey — Real Estate AI Lead Qualification & Follow-Up Workflow
 
-An AI-powered real estate lead management workflow designed to help property sales teams capture enquiries, assess buying readiness, prioritize prospects, and automate appropriate follow-up.
+HavenKey is an AI-powered real estate lead management workflow designed to help property sales teams capture enquiries, assess buying readiness, prioritize prospects, and automate follow-up.
 
-The workflow combines AI-powered lead qualification with automated routing, internal notifications, consultation scheduling, and customer communication while keeping final sales decisions under human control.
+The workflow uses AI to classify leads, route them based on buying readiness, notify the sales team, schedule property consultations, and send confirmation emails while keeping final sales decisions under human control.
 
 ## The Problem
 
 Real estate businesses can receive many property enquiries from prospects at different stages of the buying journey.
 
-Some prospects may be ready to purchase immediately, some may require additional follow-up, while others may still be exploring their options.
+Some prospects may be ready to buy, some may require follow-up, while others may still be exploring their options.
 
-When every enquiry is reviewed manually, sales teams must spend time examining prospect information, determining buying readiness, prioritizing leads, recording details, and deciding what action should happen next.
+Reviewing every enquiry manually takes time. Sales teams need to examine prospect information, assess buying readiness, record the lead, decide who needs attention, and determine the appropriate next step.
 
-Without a structured qualification process, high-intent prospects can be difficult to identify quickly among other enquiries.
+This can make it harder to identify high-intent prospects quickly.
 
 ## The Solution
 
-HavenKey uses an automated workflow to capture property enquiries and analyze prospect information using AI.
+HavenKey automates the early stages of the real estate lead management process.
 
-The system evaluates the information provided by each prospect and recommends one of three lead categories:
+When a prospect submits an enquiry, the workflow records the information and uses AI to assess buying readiness.
+
+The system recommends one of three lead categories:
 
 - **HOT** — high buying readiness and requires timely sales attention
-- **WARM** — shows interest but requires additional follow-up
+- **WARM** — interested but requires further follow-up
 - **COLD** — currently better suited for nurturing
 
-The AI also provides reasoning for its recommendation so the sales team can understand why a prospect was placed in a particular category.
+The AI also provides a reason for its recommendation.
 
-The recommended category determines the next automation path while the sales team retains control over the final qualification and sales decision.
+Based on the recommended category, the workflow routes the lead to the appropriate path. Qualifying prospects can proceed to property consultation scheduling, while the sales team retains control over final sales decisions.
 
 ## Core Capabilities
 
-- Capture incoming property enquiries
-- Record prospect information automatically
-- Analyze buying readiness using AI
-- Recommend HOT, WARM, or COLD lead classification
-- Provide reasoning for the qualification recommendation
-- Route prospects according to their recommended category
-- Notify the sales team about leads requiring attention
-- Support automated prospect follow-up
+- Capture property enquiries
+- Record lead information automatically in Google Sheets
+- Assess buying readiness using AI
+- Classify leads as HOT, WARM, or COLD
+- Provide a reason for each AI qualification
+- Route leads based on their recommended category
+- Notify the sales team through Slack when attention is required
 - Schedule property consultations for qualifying prospects
-- Maintain organized lead records
+- Send an automated confirmation email to the prospect
 - Keep final sales decisions under human control
 
 ## How It Works
 
-A typical property enquiry follows this process:
-
 1. A prospect submits a property enquiry.
-2. The workflow captures the prospect's information.
-3. The lead is automatically recorded in Google Sheets.
-4. AI analyzes the enquiry and assesses buying readiness.
-5. The system recommends a HOT, WARM, or COLD classification.
-6. The AI provides reasoning for the recommendation.
-7. The lead is routed through the appropriate follow-up path.
-8. Leads requiring sales attention are surfaced to the team through Slack.
-9. Qualifying prospects can proceed to property consultation scheduling.
-10. Appropriate email communication is sent to the prospect.
-11. The sales team retains control over the final decision and subsequent sales actions.
+2. The prospect's information is recorded in Google Sheets.
+3. AI analyzes the enquiry and assesses buying readiness.
+4. The system recommends a HOT, WARM, or COLD classification and provides a reason.
+5. The lead is routed based on the recommended category.
+6. Leads requiring attention are sent to the sales team through Slack.
+7. Qualifying prospects can have a property consultation scheduled in Google Calendar.
+8. The prospect receives an automated confirmation email.
+9. The sales team reviews the lead and retains control over the final sales decision.
 
-## Lead Qualification
+## Project Screenshots
 
-The qualification process considers information provided by the prospect to assess their level of buying readiness.
+### Main Workflow Overview
 
-Rather than treating every enquiry equally, the workflow helps organize prospects according to the level of attention they may require.
+The main n8n workflow manages the process from property enquiry and AI qualification to lead routing, consultation scheduling, and confirmation email.
 
-### HOT
+![HavenKey Main Workflow Overview](screenshots/havenkey-workflow-overview.PNG)
 
-Prospects showing strong buying readiness are prioritized for timely sales attention.
+### Property Enquiry Form
 
-### WARM
+Prospects submit their property requirements and buying information through the enquiry form.
 
-Prospects showing meaningful interest but requiring additional engagement are routed for follow-up.
+![HavenKey Property Enquiry Form](screenshots/property-enquiry-form.jpg)
 
-### COLD
+### Lead Records & AI Qualification
 
-Prospects who are not currently ready to proceed remain suitable for future nurturing.
+Lead information and AI qualification results are recorded in Google Sheets for tracking and review.
 
-The classifications are AI-generated recommendations and do not replace the sales team's final judgment.
+![HavenKey Lead Qualification Google Sheets](screenshots/lead-qualification-google-sheets.jpg)
 
-## Consultation Scheduling
+### Sales Team Notification
 
-For qualifying prospects, the workflow can support automated property consultation scheduling.
+Leads requiring attention are sent to the sales team through Slack with the prospect's information and AI qualification recommendation.
 
-This reduces the number of manual steps between identifying a high-intent prospect and arranging the next stage of the sales conversation.
+![HavenKey Sales Team Slack Notification](screenshots/sales-team-slack-notification.PNG)
 
-Scheduling remains part of the wider lead-management process rather than replacing human interaction with the sales team.
+### Property Consultation Scheduling
+
+Qualifying prospects can have a property consultation scheduled in Google Calendar.
+
+![HavenKey Property Consultation Calendar](screenshots/property-consultation-calendar.PNG)
+
+### Prospect Confirmation Email
+
+After the enquiry is processed, the prospect automatically receives a confirmation email acknowledging that their enquiry has been received.
+
+![HavenKey Prospect Confirmation Email](screenshots/prospect-follow-up-email.PNG)
 
 ## Human-in-the-Loop Design
 
-HavenKey is designed to support real estate sales teams rather than replace human judgment.
+HavenKey supports the sales team rather than replacing human judgment.
 
-AI assists with analyzing enquiry information, assessing buying readiness, explaining qualification recommendations, and routing prospects.
-
-The sales team remains responsible for final qualification decisions, property discussions, negotiations, and other important sales decisions.
+AI helps assess buying readiness, recommend a lead category, explain the recommendation, and route the lead. The sales team remains responsible for final qualification, property discussions, negotiations, and sales decisions.
 
 ## Tech Stack
 
@@ -102,7 +107,7 @@ The sales team remains responsible for final qualification decisions, property d
 **Lead Records:** Google Sheets  
 **Internal Notifications:** Slack  
 **Consultation Scheduling:** Google Calendar  
-**Customer Communication:** Gmail
+**Confirmation Email:** Gmail
 
 ## Privacy & Data Handling
 
